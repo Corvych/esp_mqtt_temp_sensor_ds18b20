@@ -1,0 +1,11 @@
+# Copy and Paste This to your configuration.yaml
+mqtt:
+  broker: localhost # If your server runs not on localhost, change this to your MQTT server IP or Domain Name
+  username: YOUR-MQTT-USER
+  password: YOUR-MQTT-PASSWORD
+sensor:
+  platform: mqtt
+  name: "Temperature Sensor" # Change sensor name if needed
+  state_topic: "sensor/temperature" # If you changed "temperature_topic" define in firmware code, change it here
+  qos: 0
+  unit_of_measurement: "ºC"
